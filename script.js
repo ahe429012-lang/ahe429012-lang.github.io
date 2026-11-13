@@ -28,7 +28,7 @@ var update = function(){
   
 }
 if(loseBtn.onclick === true || winBtn.onclick === true){
-for(int i = -1; i < n; i++) {
+for(var i = -1; i < n; i++) {
   if(winBtn.onclick === true){
     player1 = names[p1];
     p2++;
