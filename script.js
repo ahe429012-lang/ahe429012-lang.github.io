@@ -13,7 +13,7 @@ var names = document.getElementById("names");
 names.addEventListener("keydown", function (event) {
   if (event.code === "Enter" || enter.onclick === true) {
 
-var rotate = function (){
+var rotate = function(){
   names.push(document.getElementById("names"));
   n++; 
   document.getElementById("names").textContent = " ";
