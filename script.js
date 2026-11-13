@@ -21,11 +21,11 @@ var rotate = function(){
 winBtn.onclick = function () {
   //player 1 win
   win = true;
-}
+};
 loseBtn.onclick = function () {
   //player 1 lose
   win = false;
-    }
+    };
   }
 });
 
