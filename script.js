@@ -1,4 +1,3 @@
-var names = [];
 var namesIn;
 var n = 0;
 var win;
@@ -8,7 +7,7 @@ var p2 = 0;
 var winBtn = document.getElementById("winBtn");
 var loseBtn = document.getElementById("loseBtn");
 var enter = document.getElementById("enter");
-var names = new array ();
+var names = new Array();
 var names = document.getElementById("names");
 
 names.addEventListener("keydown", function (event) {
