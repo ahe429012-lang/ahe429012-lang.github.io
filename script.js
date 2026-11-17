@@ -10,8 +10,18 @@ var enter = document.getElementById("enter");
 var names = new Array();
 var names = document.getElementById("names");
 
+var update = function(){
+  document.getElementById("player1").textContent = player1;
+  document.getElementById("player2").textContent = player2;
+  
+}
+
 names.addEventListener("keydown", function (event) {
   if (event.code === "Enter" || enter.onclick === true) {
+      update();
+
+  }
+});
 
 var rotate = function(){
   names.push(document.getElementById("names"));
@@ -26,14 +36,8 @@ loseBtn.onclick = function () {
   //player 1 lose
   win = false;
     };
-  }
-});
 
-var update = function(){
-  document.getElementById("player1").textContent = player1;
-  document.getElementById("player2").textContent = player2;
-  
-}
+
 if(loseBtn.onclick === true || winBtn.onclick === true){
 for(var i = -1; i < n; i++) {
   if(winBtn.onclick === true){
