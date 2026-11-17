@@ -8,7 +8,7 @@ var winBtn = document.getElementById("winBtn");
 var loseBtn = document.getElementById("loseBtn");
 var enter = document.getElementById("enter");
 var names = new Array();
-var names = document.getElementById("names");
+var namesIn = document.getElementById("names");
 
 var update = function(){
   document.getElementById("player1").textContent = player1;
@@ -24,9 +24,9 @@ names.addEventListener("keydown", function (event) {
 });
 
 var rotate = function(){
-  names.push(document.getElementById("names"));
+  names.push(namesIn.value);
+  namesIn.value = " ";
   n++; 
-  document.getElementById("names").textContent = " ";
 }
 winBtn.onclick = function () {
   //player 1 win
