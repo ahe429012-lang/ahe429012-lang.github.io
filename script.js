@@ -17,7 +17,7 @@ var update = function(){
   document.getElementById("player2").textContent = player2;
   list = document.getElementById("list");
   newPlayer = document.createElement('li');
-  newPlayer.textContent = namesIn;
+  newPlayer.textContent = namesIn.value;
   list.appendChild(newPlayer);
   
 }
