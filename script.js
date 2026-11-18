@@ -15,14 +15,14 @@ var namesIn = document.getElementById("names");
 var update = function(){
   document.getElementById("player1").textContent = player1;
   document.getElementById("player2").textContent = player2;
-  list = document.getElementById("list");
-  newPlayer = document.createElement('li');
-  newPlayer.textContent = namesIn.value;
-  list.appendChild(newPlayer);
   
 }
 
 var rotate = function(){
+  list = document.getElementById("list");
+  newPlayer = document.createElement('li');
+  newPlayer.textContent = namesIn.value;
+  list.appendChild(newPlayer);
   names.push(namesIn.value);
   namesIn.value = " ";
   n++; 
