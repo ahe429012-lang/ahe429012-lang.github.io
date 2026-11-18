@@ -30,7 +30,7 @@ loseBtn.onclick = function () {
   win = false;
     };
 
-names.addEventListener("keydown", function (event) {
+namesIn.addEventListener("keydown", function (event) {
   if (event.code === "Enter") {
       rotate();
       update();
@@ -43,16 +43,28 @@ enter.onclick = function (){
 }
 
 
-if(loseBtn.onclick === true || winBtn.onclick === true){
-  if(winBtn.onclick === true){
+
+  winBtn.onclick = function (){
     player1 = names[p1];
-    p2++;
     player2 = names[p2];
+    update();
+    if(p1<0 || p2<0){
+      p2--;
+    }
+    else {
+      p2++;
+    }
   }
-  else{
+  loseBtn.onclick = function (){
     player2 = names[p2];
-    p1++;
     player1 = names[p1];
+    update();
+    if(p1<0 || p2<0){
+      p2--;
+    }
+    else {
+      p2++;
+    }
   }
-  update();
-}
+
+
