@@ -2,6 +2,8 @@ var namesIn;
 var n = 0;
 var win;
 var player1, player2;
+var list;
+var newPlayer;
 var p1 = 0;
 var p2 = 0;
 var winBtn = document.getElementById("winBtn");
@@ -13,7 +15,10 @@ var namesIn = document.getElementById("names");
 var update = function(){
   document.getElementById("player1").textContent = player1;
   document.getElementById("player2").textContent = player2;
-  document.getElementById("list").textContent = names.value;
+  list = document.getElementById("list");
+  newPlayer = document.createElement('li');
+  newPlayer.textContent = namesIn;
+  list.appendChild(newPlayer);
   
 }
 
