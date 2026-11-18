@@ -49,7 +49,7 @@ enter.onclick = function (){
     player2 = names[p2];
     update();
     if(p1<0 || p2<0){
-      p2--;
+      p2===0;
     }
     else {
       p2++;
@@ -60,10 +60,10 @@ enter.onclick = function (){
     player1 = names[p1];
     update();
     if(p1<0 || p2<0){
-      p2--;
+      p1===0;
     }
     else {
-      p2++;
+      p1++;
     }
   }
 
