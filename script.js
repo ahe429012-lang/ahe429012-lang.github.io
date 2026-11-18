@@ -16,13 +16,6 @@ var update = function(){
   
 }
 
-names.addEventListener("keydown", function (event) {
-  if (event.code === "Enter" || enter.onclick === true) {
-      update();
-
-  }
-});
-
 var rotate = function(){
   names.push(namesIn.value);
   namesIn.value = " ";
@@ -37,9 +30,20 @@ loseBtn.onclick = function () {
   win = false;
     };
 
+names.addEventListener("keydown", function (event) {
+  if (event.code === "Enter") {
+      rotate();
+      update();
+
+  }
+});
+enter.onclick = function (){
+  rotate();
+  update();
+}
+
 
 if(loseBtn.onclick === true || winBtn.onclick === true){
-for(var i = -1; i < n; i++) {
   if(winBtn.onclick === true){
     player1 = names[p1];
     p2++;
@@ -51,5 +55,4 @@ for(var i = -1; i < n; i++) {
     player1 = names[p1];
   }
   update();
-}
 }
