@@ -13,6 +13,7 @@ var namesIn = document.getElementById("names");
 var update = function(){
   document.getElementById("player1").textContent = player1;
   document.getElementById("player2").textContent = player2;
+  document.getElementById("list").textContent = names.value;
   
 }
 
