@@ -1,5 +1,5 @@
 var namesIn;
-var n = 0;
+var n = -1;
 var win;
 var player1, player2;
 var list;
